@@ -1,0 +1,7 @@
+parameters:
+#    byte_history_user.example.class: ByteHistory\UserBundle\Example
+
+services:
+#    byte_history_user.example:
+#        class: %byte_history_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

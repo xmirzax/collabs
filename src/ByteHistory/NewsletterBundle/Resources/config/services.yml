@@ -1,0 +1,7 @@
+parameters:
+#    byte_history_newsletter.example.class: ByteHistory\NewsletterBundle\Example
+
+services:
+#    byte_history_newsletter.example:
+#        class: %byte_history_newsletter.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

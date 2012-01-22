@@ -1,0 +1,7 @@
+parameters:
+#    byte_history_contact_me.example.class: ByteHistory\ContactMeBundle\Example
+
+services:
+#    byte_history_contact_me.example:
+#        class: %byte_history_contact_me.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

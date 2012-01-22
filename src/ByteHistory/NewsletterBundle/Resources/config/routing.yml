@@ -1,0 +1,3 @@
+newsletter_index:
+    pattern:  /newsletter
+    defaults: { _controller: ByteHistoryNewsletterBundle:Default:index }

@@ -1,0 +1,11 @@
+collaborator_index:
+    pattern:  /collaborator
+    defaults: { _controller: ByteHistoryCollaboratorBundle:Default:index }
+
+collaborator_search:
+    pattern:  /collaborator/search
+    defaults: { _controller: ByteHistoryCollaboratorBundle:Default:search }
+    
+collaborator_add:
+    pattern:  /collaborator/add
+    defaults: { _controller: ByteHistoryCollaboratorBundle:Default:add }

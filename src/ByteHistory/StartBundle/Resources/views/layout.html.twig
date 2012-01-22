@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="{{ asset('bundles/bytehistory/css/demo.css') }}" type="text/css" media="all" />
+        <link rel="stylesheet" href="{{ asset('bundles/bytehistory/css/bh_menu_style.css') }}" type="text/css" media="all" />
+        <!--[if IE]>
+        <link rel="stylesheet" media="all" type="text/css" href="ie.css" />
+        <![endif]-->
+        <title>{% block title %}Demo Bundle{% endblock %}</title>
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <div class="nav">
+            <div class="table">
+
+            <ul class="select"><li><a href="{{ path('homepage') }}"><b>Accueil</b></a></li></ul>
+
+            <ul class="select"><li><a href="{{ path('collaborator_index') }}"><b>Collaborateurs</b></a>
+                <div class="select_sub">
+                        <ul class="sub">
+                                <li><a href="{{ path('collaborator_search') }}">Rechercher</a></li>
+                                <li><a href="{{ path('collaborator_add') }}">Déposer une annonce</a></li> 
+                        </ul>
+                </div>
+                </li>
+            </ul>
+
+            <ul class="select"><li><a href="{{ path('partner_index') }}"><b>Partenaires</b></a>
+                <div class="select_sub">
+                        <ul class="sub">
+                                <li><a href="{{ path('partner_index') }}">Nos partenaires</a></li>
+                                <li><a href="{{ path('partner_add') }}">Soumettre un partenariat</a></li>
+                        </ul>
+                </div>
+                </li>
+            </ul>
+
+
+            <ul class="select"><li><a href="{{ path('newsletter_index') }}"><b>Newsletter</b></a>
+                </li>
+            </ul>
+            
+            <ul class="select"><li><a href="{{ path('description') }}"><b>Qui sommes-nous?</b></a>
+                    <div class="select_sub">
+                        <ul class="sub">
+                                <li><a href="{{ path('description') }}">A propos</a></li>
+                                <li><a href="{{ path('recruitment') }}">Recrutement</a></li>
+
+                        </ul>
+                </div>
+                </li>
+            </ul>
+
+
+            <ul class="select"><li><a href="{{ path('contact_me') }}"><b>Contact</b></a>
+                </li>
+            </ul>
+            
+            <ul class="select"><li><a href="login"><b>Connexion</b></a>
+                </li>
+            </ul>
+
+            </div>
+        </div>
+            
+        <div id="symfony-wrapper">
+            <div id="symfony-header">
+                
+                    <img src="{{ asset('bundles/bytehistory/images/logo.gif') }}" alt="Symfony">
+               
+            </div>
+
+            {% if app.session.flash('notice') %}
+                <div class="flash-message">
+                    <em>Notice</em>: {{ app.session.flash('notice') }}
+                </div>
+            {% endif %}
+
+            {% block content_header %}
+                <ul id="menu">
+                    {% block content_header_more %}
+                        
+                    {% endblock %}
+                </ul>
+
+                <div style="clear: both"></div>
+            {% endblock %}
+
+            <div class="symfony-content">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+            {% if code is defined %}
+                <h2>Code behind this page</h2>
+                <div class="symfony-content">{{ code|raw }}</div>
+            {% endif %}
+        </div>
+    </body>
+</html>

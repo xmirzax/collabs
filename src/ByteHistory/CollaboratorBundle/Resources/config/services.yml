@@ -1,0 +1,7 @@
+parameters:
+#    byte_history_collaborator.example.class: ByteHistory\CollaboratorBundle\Example
+
+services:
+#    byte_history_collaborator.example:
+#        class: %byte_history_collaborator.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,7 @@
+partner_index:
+    pattern:  /partner
+    defaults: { _controller: ByteHistoryPartnerBundle:Default:index }
+    
+partner_add:
+    pattern:  /partner/add
+    defaults: { _controller: ByteHistoryPartnerBundle:Default:add }

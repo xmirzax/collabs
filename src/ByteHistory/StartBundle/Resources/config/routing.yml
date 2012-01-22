@@ -1,0 +1,11 @@
+homepage:
+    pattern:  /
+    defaults: { _controller: ByteHistoryStartBundle:Default:index }
+
+description:
+    pattern:  /description
+    defaults: { _controller: ByteHistoryStartBundle:Default:description }
+
+recruitment:
+    pattern:  /recruitment
+    defaults: { _controller: ByteHistoryStartBundle:Default:recruitment }
