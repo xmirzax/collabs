@@ -5,12 +5,12 @@ namespace ByteHistory\CollaboratorBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * ByteHistory\CollaboratorBundle\Entity\Domain
+ * ByteHistory\CollaboratorBundle\Entity\Job
  *
  * @ORM\Table()
  * @ORM\Entity
  */
-class Domain
+class Job
 {
     /**
      * @var integer $id
@@ -21,11 +21,10 @@ class Domain
      */
     private $id;
 
-
     /**
      * @var string $name
      *
-     * @ORM\Column(name="name", type="string", length=30)
+     * @ORM\Column(name="name", type="string", length=60)
      */
     private $name;
 

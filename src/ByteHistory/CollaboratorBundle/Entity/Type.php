@@ -5,12 +5,12 @@ namespace ByteHistory\CollaboratorBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * ByteHistory\CollaboratorBundle\Entity\Domain
+ * ByteHistory\CollaboratorBundle\Entity\Type
  *
  * @ORM\Table()
  * @ORM\Entity
  */
-class Domain
+class Type
 {
     /**
      * @var integer $id
@@ -20,7 +20,6 @@ class Domain
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
 
     /**
      * @var string $name
